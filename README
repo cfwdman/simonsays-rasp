@@ -1,0 +1,8 @@
+simon says is a small project to
+rebuild the famous game of the 70's on a raspberry Pi3 with 
+little hardware attached: 
+
+- 4 LED to playback a sequence of lights which the user has to repeat
+- 4 simple switches to enter the required sequence again. 
+
+

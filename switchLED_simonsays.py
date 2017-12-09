@@ -18,7 +18,7 @@ GPIO.setup(23,GPIO.OUT)
 GPIO.setup(24,GPIO.OUT)
 
 # Variablen setzen
-actuelleTaste = "keine"
+aktuelleTaste = "keine"
 
 # messen, ob schalter geschlossen ist und berührungen zählen
 try:
@@ -32,17 +32,19 @@ try:
             GPIO.output(4, 0)
         if GPIO.input(5)==False:
             print "gelb"
-            aktuelleTaste 
+            aktuelleTaste = "gelb"
             GPIO.output(18, 1)
         else:
             GPIO.output(18, 0)
         if GPIO.input(6)==False:
             print "grün"
+            aktuelleTaste = "grün"
             GPIO.output(23, 1)
         else:
             GPIO.output(23, 0)
         if GPIO.input(13)==False:
             print "blau"
+            aktuelleTaste = "blau"
             GPIO.output(24, 1)
         else:
             GPIO.output(24, 0)
